@@ -3,7 +3,17 @@
     padding-bottom: 60px;
     background-color: $background-color;
     &__logo {
+
+        //змінено
+        margin-right: 0;
         margin-bottom: 20px;
+        @media screen and (min-width: 1200px) {
+            margin-right: 93px;
+        }
+    }
+    // змінено
+    .footer__divlogo {
+        padding-bottom: 60px;
     }
     &__container {
         // display: flex;
@@ -12,6 +22,9 @@
     &__span {
         color: $pure-white-color;
     }
+
+    text-align: center;
+    // змінено 
 }
 .address {
     font-style:normal;
@@ -38,15 +51,22 @@
 }
 
 .join-in {
-    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 208px;
+    padding-bottom: 60px;
+    // margin-left: 70px; змінено
     &__list {
-        // display: flex;
+        display: flex;
     }
     &__item:not(:first-child) {
         margin-left: 10px;
     }
     &__link {
-        // display:flex;
+        display:flex;
         justify-content: center;
         align-items: center;
         width: 44px;
@@ -65,7 +85,8 @@
 .miniform {
     margin-left:auto ;
     &__mail-form {
-        width: 358px;
+        // width: 358px;
+        width: 100%;
         height: 50px;
         border-radius: 4px;
         color: $pure-white-color;
@@ -74,6 +95,10 @@
         padding: 15px 16px;
     }
     &__button {
+        // змінено
+        width: 200px;
+        height: 50px;
+        // змінено
         @include fonts(700, 16px, 1.87);
         padding: 10px 62px 10px 28px;
         background-color: $accent-color;
@@ -97,14 +122,22 @@
     &__thumb {
         position: relative;
         // display: flex;
-        margin-left: 12px;
+        // margin-left: 12px; Змінено
     }
     &__btn-icon {
         position: absolute;
         top: 13px;
-        right: 28px;
+        right: 288px;
+        // right: 28px;
         fill: $pure-white-color;
         width: 24px;
         height: 24px;
     }
+    // змінено
+    &__label {
+        display: block;
+        padding-bottom: 20px;
+    }
+    // змінено
+
 }
