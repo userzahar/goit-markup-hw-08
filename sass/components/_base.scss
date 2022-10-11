@@ -1,0 +1,98 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+body {
+    color: $primary-text-color; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px; 
+    letter-spacing: 0.03em; 
+    background-color: $pure-white-color;
+}
+.title {
+    @include fonts(700, 36px, 1.2);
+    text-align: center;
+    margin-bottom: 50px;
+    color: $contrast-color;
+} 
+.invite-text {
+    display: block;
+    color: $pure-white-color;
+    text-transform: uppercase;  
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.list.flex {
+    margin-left: auto;
+}
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+html {
+    box-sizing: border-box;
+}
+.list { 
+    list-style: none; 
+    padding: 0; 
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+img {
+    display: block;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1200px;}
+ul,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+ .flex {
+    display: flex;
+}
+.logo {
+    @include fonts(700, 26px, 1.2);
+    color: $accent-color; 
+    // font-weight: 700;
+    // font-size: 26px;
+    // line-height: 1.2; 
+    font-family:'Raleway', sans-serif;
+    display: inline-block;
+    margin-right: 93px;
+}
+.section {     
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.button {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    font-family: inherit;
+    border-radius: 4px;
+    border: 1px solid transparent; 
+    background-color: $accent-color;
+    color: $pure-white-color; 
+}
+.icon {
+    width: 20px;
+    height: 20px;
+}
