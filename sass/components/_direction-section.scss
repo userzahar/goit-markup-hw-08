@@ -1,7 +1,13 @@
 
 
-.direction {padding-top: 0;
+.direction {
+    padding-top: 0;
+    @media screen and (max-width:1200px) {
+        display: none;
+    }
+
     &__list {
+        display: flex;
         justify-content: space-between;
     }
     &__thumb {
@@ -12,7 +18,7 @@
     }
     &__text {
         @include fonts(700, 14px, 1.14);
-        // display: flex;
+        display: flex;
         align-items: center;
         justify-content: center;
         color: $pure-white-color;
