@@ -2,7 +2,12 @@
     display: flex;
     justify-content: center;
     padding-top: 4px;
-    
+    width: 370px;
+}
+.checkbox__span {
+    display: inline-block;
+    @include fonts(400, 12px, 1,166);
+    letter-spacing: 0.03em;
 }
 
 .checkbox__icon {

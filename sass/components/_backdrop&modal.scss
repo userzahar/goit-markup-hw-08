@@ -25,8 +25,8 @@
     position: absolute;
     top:50%;
     left:50%;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     padding: 40px;
     background-color: $pure-white-color;
     border-radius: 4px;
@@ -36,6 +36,11 @@
     animation: modal-first 2500ms linear;
     transform-origin: center center;
     opacity: 1;
+    @media screen and (min-width:1200px) {
+        // background-color: pink;
+        width: 528px;
+        height: 581px;
+    }
     &__text-invite {
         @include fonts(700, 20px, 1.06);
         // font-weight: 700;
@@ -45,6 +50,7 @@
         color:$pure-black-color;
         margin-bottom: 12px;
     }
+    
 }
 
 @keyframes modal-first {

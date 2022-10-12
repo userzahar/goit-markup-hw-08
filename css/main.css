@@ -681,8 +681,8 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -692,6 +692,12 @@ p {
           animation: modal-first 2500ms linear;
   transform-origin: center center;
   opacity: 1;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__text-invite {
   font-weight: 700;
@@ -793,6 +799,7 @@ p {
 }
 .form__link {
   color: #2196F3;
+  display: inline-block;
 }
 .form__button {
   font-weight: 700;
@@ -841,6 +848,15 @@ p {
   display: flex;
   justify-content: center;
   padding-top: 4px;
+  width: 370px;
+}
+
+.checkbox__span {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
 }
 
 .checkbox__icon {
