@@ -236,6 +236,7 @@ p {
   .mode__list {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -244,36 +245,12 @@ p {
     flex-wrap: nowrap;
   }
 }
-@media screen and (min-width: 480px) {
-  .mode__item {
-    max-width: 450px;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .mode__item {
-    width: 354px;
-    text-align: left;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .mode__item {
-    width: 1200px;
-    text-align: left;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .mode__item + .mode__item {
-    margin-left: 30px;
-  }
-}
 .mode__subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
   color: #212121;
-  margin-bottom: 10px;
 }
 .mode__text {
   line-height: 1.7;
@@ -298,12 +275,30 @@ p {
   height: 70px;
 }
 
+.mode__item {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
 @media screen and (min-width: 768px) {
-  .mode__item:nth-child(2n) {
-    margin-left: 30px;
+  .mode__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mode__item {
+    width: 100%;
+    text-align: left;
   }
 }
 
+@media screen and (max-width: 767px) {
+  .mode__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .direction {
   padding-top: 0;
 }

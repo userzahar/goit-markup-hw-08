@@ -1,36 +1,24 @@
 .mode {
+
     &__list {
         @media screen and (min-width:768px) {
             display:flex;
+            // width: 100%;
             // justify-content: space-between;
             flex-wrap: wrap;
-        }
+            margin: -15px;
+            }
         @media screen and (min-width:1200px) {
             display:flex;
             // justify-content: space-between;
             flex-wrap:nowrap;
-        }
+            }
     }
-    &__item {
-        @media screen and (min-width:480px) {
-            max-width: 450px;
-            text-align: center;
-        }
-        @media screen and (min-width:768px) {
-            width: 354px;
-            text-align: left;
-        }
-        
-        @media screen and (min-width:1200px) {
-            width: 1200px;
-            text-align: left;
-        }
-    }
-    &__item + &__item {
-        @media screen and (min-width:1200px) {
-            margin-left: 30px;
-        } 
-    }
+    // &__item + &__item {
+    //     @media screen and (min-width:1200px) {
+    //         margin-left: 30px;
+    //     } 
+    // }
     &__subtitle {
         @include fonts(700, 14px, 1.2);
         text-transform: uppercase; 
@@ -38,7 +26,7 @@
         // font-weight: 700; 
         // font-size: 14px;
         // line-height: 1.2;
-        margin-bottom: 10px;
+        // margin-bottom: 10px;
     }
     &__text {
         line-height: 1.7;
@@ -62,8 +50,39 @@
         height: 70px;
     }
 }
-.mode__item:nth-child(2n) {
+.mode__item {
+    text-align: center;
+    width: 100%;
+    display: block;
     @media screen and (min-width:768px) {
-        margin-left: 30px;
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+        text-align: left;
+    }
+    
+    @media screen and (min-width:1200px) {
+        width: 100%;
+        text-align: left;
     }
 }
+@media screen and (max-width:767px) {
+    .mode__item:not(:last-child) {
+        margin-bottom: 30px;
+    } 
+}
+
+
+// @media screen and (min-width:767) {
+//     .mode__item:not(:last-child) {
+//     margin-bottom: 10px;
+//     background-color: pink;
+//     }
+// }
+
+
+// .mode__item:nth-child(2n) {
+//     @media screen and (min-width:768px) {
+//         // margin-left: 30px;
+//     }
+// }
+
