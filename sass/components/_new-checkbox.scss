@@ -6,7 +6,7 @@
 }
 .checkbox__span {
     display: inline-block;
-    @include fonts(400, 12px, 1,166);
+    @include fonts(400, 12px, 1.166);
     letter-spacing: 0.03em;
 }
 

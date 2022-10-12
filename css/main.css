@@ -586,7 +586,6 @@ p {
 .miniform {
   width: 100%;
   margin-left: auto;
-  text-align: left;
 }
 @media screen and (min-width: 1200px) {
   .miniform {
@@ -800,6 +799,9 @@ p {
 .form__link {
   color: #2196F3;
   display: inline-block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
 }
 .form__button {
   font-weight: 700;
