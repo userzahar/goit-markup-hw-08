@@ -1,0 +1,17 @@
+.mobile-menu {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.mobile-menu .icon-cross {
+    display: none;
+}
+.mobile-menu.is-open .icon-cross {
+    display: block;
+}
+.mobile-menu.is-open .icon-menu {
+    display: none;
+}

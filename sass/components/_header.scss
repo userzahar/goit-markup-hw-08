@@ -1,3 +1,6 @@
+
+
+
 .header__navigate {
     color: $contrast-color; 
     align-items: center;
@@ -5,7 +8,7 @@
 }
 .header__container {
     border-bottom: 1px solid $border-color;
-    // display: flex;
+    display: flex;
     align-items: center ;
 }
 .header__icon {
