@@ -10,12 +10,15 @@
     background-repeat: no-repeat;
     max-width: 1600px;
     &__title {
-        @include fonts(900, 44px, 1.4);
+        @include fonts(900, 26px, 1.6);
         color:$pure-white-color; 
         letter-spacing: 0.06em; 
         text-transform: uppercase;
         margin-bottom: 30px;
         max-width: 696px;
+        @media screen and (min-width:1200px) {
+            @include fonts(900, 44px, 1.4);   
+        }
     }
     &__button { 
         font-weight: 700;
@@ -24,3 +27,6 @@
         height: 50px;
     }
 }
+        
+        
+        
