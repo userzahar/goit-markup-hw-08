@@ -21,14 +21,20 @@
       
                 <div class="header__container container">
                     <a href="index.html" lang="en" class="navigate__logo logo link">Web<span class="navigate__span">Studio</span></a>
-                    <button type="button" class="header__mobile-menu mobile-menu" 
+                    <button type="button" class="header__mobile-menu mobile-menu js-open-menu" 
                     aria-expanded="false" aria-controls="menu-container">
                         <svg width="40" height="40" aria-label="перемикач мобільного меню" >
-                            <use class="mobile-menu__icon-cross icon-cross" href="./images/symbol-defs.svg#cross"></use>
                             <use class="mobile-menu__icon-menu icon-menu" href="./images/symbol-defs.svg#menu-btn"></use>
                         </svg>
                     </button>
-                    <div class="header__menu-container menu-container"  id="menu-container" data-modal>  
+                    <div class="header__menu-container menu-container js-menu-container"  id="menu-container" data-modal>
+
+                            <button type="button" class="close__mobile-menu js-close-menu">
+                                <svg width="40" height="40" aria-label="перемикач мобільного меню">
+                                    <use class="mobile-menu__icon-cross icon-cross" href="./images/symbol-defs.svg#cross"></use>
+                                </svg>
+                            </button> 
+                       
                         <nav class="header__navigate navigate"> 
                             <ul class="navigate__list list">
                                 <li class="navigate__items"><a href="./index.html" class="navigate__link link navigate__link--current">Студія</a></li>
