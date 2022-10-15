@@ -40,12 +40,12 @@
         text-transform: uppercase;
         margin-bottom: 30px;
         max-width: 360px;
-        max-width: 696px;
         @include desk {
             width: 696px; 
         }
         @media screen and (min-width:1200px) {
-            @include fonts(900, 44px, 1.4);   
+            @include fonts(900, 44px, 1.4);  
+            max-width: 696px; 
         }
     }
     &__button { 
