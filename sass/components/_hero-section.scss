@@ -9,7 +9,7 @@
     background-image: linear-gradient(90deg, $gradient-color, $gradient-color),
      url(../images/bg-mobile-1x.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     max-width: 1600px;
     background-position: 50% 50%;
     @include retina {
