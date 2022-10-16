@@ -93,22 +93,14 @@ p {
     }
 }
 .section {    
-    // @media screen and (min-width:480px) {
-    //     padding-top: 60px;
-    //     padding-bottom: 60px;
-    // }
 
-    @media screen and (min-width:0) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+    padding-top: 60px;
+    padding-bottom: 60px;
     
     @media screen and (min-width:1200px) {
         padding-top: 94px;
         padding-bottom: 94px;
     }
-    // padding-top: 94px;
-    // padding-bottom: 94px;
 }
 .button {
     font-size: 16px;
