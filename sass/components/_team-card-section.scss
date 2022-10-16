@@ -19,7 +19,6 @@
         width: 100%;
         @media screen and (min-width:768px) {
             flex-wrap: nowrap;
-            // justify-content: space-between;
             flex-direction: column;
             display: flex;
             width: calc((100% - 2 * 30px) / 2);
@@ -28,7 +27,7 @@
         
         @media screen and (min-width:1200px) {
             justify-content: space-between;
-            display: flex;
+            // display: flex;
             width: 270px;
             // margin-top: 0;
         }
