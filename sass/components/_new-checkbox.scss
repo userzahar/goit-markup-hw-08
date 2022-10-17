@@ -1,13 +1,18 @@
 .checkbox {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 4px;
-    width: 370px;
+    width: 100%;
 }
 .checkbox__span {
     display: inline-block;
     @include fonts(400, 12px, 1.166);
     letter-spacing: 0.03em;
+    @include desk {
+        font-size: 14px;
+        line-height:1.7;
+    }
 }
 
 .checkbox__icon {
@@ -40,6 +45,16 @@
     border-color: $accent-color;
     background-origin: border-box;
     background-repeat: no-repeat;
+}
+.checkbox__link {
+    color:$accent-color;
+    display: inline-block;
+    @include fonts(400, 12px, 1.166);
+    letter-spacing: 0.03em;
+    @include desk {
+        font-size: 14px;
+        line-height:1.7;
+    }
 }
 
 

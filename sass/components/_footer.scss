@@ -2,6 +2,9 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $background-color;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+     }
     &__logo {
         margin-right: 0;
         margin-bottom: 20px;
@@ -74,10 +77,12 @@
     margin-left: auto;
     margin-right: auto;
     width: 208px;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
     // margin-left: 70px; змінено
     @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
         margin-left: 70px;
+        align-items: flex-start;
     }
     &__list {
         display: flex;
