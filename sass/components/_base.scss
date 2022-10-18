@@ -84,13 +84,6 @@ img {
     line-height: 16px;
 }
 
-
-
-
-
-//  .flex {
-//     display: flex;
-// }
 .logo {
     @include fonts(700, 26px, 1.2);
     color: $accent-color; 
