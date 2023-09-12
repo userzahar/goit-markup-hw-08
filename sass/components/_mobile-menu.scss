@@ -37,7 +37,6 @@
 .menu-container {     
     background-color: $pure-white-color;
     width: 100%;
-    @media screen and (max-width:767px) {
         // transform: translateX(110%);
         display:none;
         position: fixed;
@@ -56,7 +55,7 @@
             display: flex;
             // transform: translateX(0);
         }
-    }
+
     @media screen and (min-width:768px) {
         display: flex;  
         align-items: center;  
